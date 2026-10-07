@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Control Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+
+        <!-- TOP SECTION -->
+        <div class="panel-row">
+            <!-- Massive Skeuomorphic Rotary Dial -->
+            <div class="dial-milled-track">
+                <div class="dial-outer-glow">
+                    <div class="rotary-knob-large" id="mainKnob">
+                        <div class="knob-indicator-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Power & Media Transports Block -->
+            <div class="control-block-top-right">
+                <div class="button-group-row">
+                    <button class="btn-clay btn-circle"><span class="icon">⏻</span></button>
+                    <button class="btn-clay btn-circle active"><span class="icon">⏻</span></button>
+                </div>
+                <div class="button-group-row sub-controls">
+                    <button class="btn-clay btn-circle-sm"><span class="icon square">■</span></button>
+                    <button class="btn-clay btn-circle-sm active"><span class="icon play">▶</span></button>
+                    <button class="btn-clay btn-circle-sm"><span class="icon skip">¼</span></button>
+                </div>
+                <div class="milled-well-capsule"></div>
+            </div>
+        </div>
+
+        <!-- BOTTOM SECTION -->
+        <div class="panel-grid-lower">
+
+            <!-- Column 1 -->
+            <div class="control-column">
+                <div class="segmented-container" data-type="tabs">
+                    <button class="segment-btn"><span class="icon">☰</span></button>
+                    <button class="segment-btn active"><span class="icon">💡</span></button>
+                    <button class="segment-btn"><span class="icon">★</span></button>
+                </div>
+
+                <div class="toggle-row">
+                    <div class="toggle-track">
+                        <div class="toggle-handle"></div>
+                    </div>
+                    <div class="toggle-track active">
+                        <div class="toggle-handle"></div>
+                    </div>
+                </div>
+
+                <div class="segmented-container inline-arrows" data-type="tabs">
+                    <button class="segment-btn"><span class="icon">‹</span></button>
+                    <button class="segment-btn active"><span class="icon">›</span></button>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="control-column center-align">
+                <div class="status-indicator-grid">
+                    <div class="checkbox-clay"></div>
+                    <div class="checkbox-clay active"></div>
+                    <div class="radio-clay"></div>
+                    <div class="radio-clay active"></div>
+                </div>
+
+                <div class="secondary-dial-well">
+                    <div class="secondary-dial-knob" id="jogKnob">
+                        <div class="rim-glow-arc"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="control-column faders-row">
+                <div class="slider-vertical-container">
+                    <div class="slider-track-milled">
+                        <div class="slider-fill-liquid" id="fill1"></div>
+                        <div class="slider-thumb-clay" id="thumb1">
+                            <div class="thumb-lines"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-vertical-container">
+                    <div class="slider-track-milled">
+                        <div class="slider-fill-liquid" id="fill2"></div>
+                        <div class="slider-thumb-clay" id="thumb2">
+                            <div class="thumb-lines"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
